@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
           
           <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="grid lg:grid-cols-[1.1fr,1fr] gap-16 lg:gap-24 items-center">
+            <div className="grid lg:grid-cols-[1.4fr,1fr] gap-12 lg:gap-16 items-center">
               <div className="flex flex-col gap-8 animate-in slide-in-from-bottom-8 duration-700 fade-in fill-mode-both">
                 <div className="inline-flex items-center rounded-full border border-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors bg-background/50 backdrop-blur-sm text-primary w-fit shadow-sm">
                   <Compass className="w-3.5 h-3.5 mr-2" />
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
               
               {/* Hero Image Placeholder */}
-              <div className="relative w-full max-w-lg mx-auto lg:max-w-none animate-in fade-in zoom-in-95 duration-1000 delay-300 fill-mode-both">
+              <div className="relative w-full max-w-sm mx-auto lg:max-w-[400px] lg:ml-auto animate-in fade-in zoom-in-95 duration-1000 delay-300 fill-mode-both">
                 {/* Decorative elements behind the image */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-[2.5rem] transform rotate-3 scale-105 blur-xl -z-10" />
                 <div className="absolute -inset-1 bg-gradient-to-br from-border/50 to-background rounded-[2.5rem] -z-10" />
