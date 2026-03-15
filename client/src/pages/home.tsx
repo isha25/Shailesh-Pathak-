@@ -44,7 +44,8 @@ export default function Home() {
                 </div>
                 
                 <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] text-foreground tracking-tight">
-                  I help students gain <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">complete clarity</span> in choosing their Class 11 stream.
+                  <span className="block text-2xl md:text-3xl font-bold text-foreground/80 mb-4 tracking-normal">For Parents & Class 10 Students Who Are Confused About Class 11 Stream Selection</span>
+                  Get Absolute Clarity on the Right Stream for Class 11 Without <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">Stress, Guesswork, or Family Arguments</span>
                 </h1>
                 
                 <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed font-medium">
@@ -58,14 +59,12 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-5 pt-6">
-                  <Button size="lg" className="rounded-full h-14 px-8 text-base shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 group">
-                    Start Your Journey
+                <div className="flex flex-col gap-3 pt-6">
+                  <Button size="lg" className="w-full sm:w-auto sm:self-start rounded-xl h-16 px-10 text-lg font-bold shadow-xl shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 transition-all duration-300 group bg-gradient-to-r from-orange-400 to-amber-500 hover:from-orange-500 hover:to-amber-600 text-white border-none">
+                    Book My Free Stream Clarity Call Now
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1.5 transition-transform" />
                   </Button>
-                  <Button size="lg" variant="outline" className="rounded-full h-14 px-8 text-base border-border/60 hover:bg-secondary/80 transition-all duration-300">
-                    Learn More
-                  </Button>
+                  <p className="text-sm font-semibold text-muted-foreground/80 sm:pl-4">Normally Rs. 2000 - <span className="text-orange-500 font-bold">Today It's Free</span></p>
                 </div>
               </div>
               
@@ -174,41 +173,52 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="flex flex-col items-center text-center mb-20">
-              <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4">About Me</span>
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Meet Your Coach</h2>
+              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">About Your Coach - Shailesh Pathak</h2>
+              <p className="text-xl text-primary font-semibold mb-6">Career Clarity & Stream Selection Coach</p>
               <div className="h-1.5 w-24 bg-primary/20 rounded-full overflow-hidden">
                 <div className="h-full bg-primary w-1/3 rounded-full" />
               </div>
             </div>
 
-            <div className="max-w-4xl mx-auto relative group">
+            <div className="max-w-5xl mx-auto relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <Card className="relative border-border/40 shadow-2xl bg-background/80 backdrop-blur-xl overflow-hidden rounded-[2.5rem] transition-all duration-500 hover:shadow-primary/5">
-                <CardContent className="p-10 md:p-16 flex flex-col md:flex-row gap-12 items-center md:items-start">
+                <CardContent className="p-10 md:p-16 grid md:grid-cols-2 gap-12 items-center">
                   
-                  <div className="md:w-1/3 flex flex-col items-center text-center md:text-left md:items-start">
-                    <div className="w-32 h-32 rounded-full bg-secondary border-4 border-background shadow-xl flex items-center justify-center mb-6 shrink-0 relative">
-                       <span className="text-3xl font-extrabold text-muted-foreground/30">SP</span>
-                       <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-black/10" />
+                  <div className="flex flex-col text-left space-y-6 order-2 md:order-1">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      I help parents and Class 9-10 students make clear, confident stream decisions using structured guidance and psychological insight not guesswork.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      With years of experience working closely with students, I've developed a proven framework to identify their true strengths and align them with the right academic paths.
+                    </p>
+                    
+                    <div className="pt-6 border-t border-border/50">
+                       <h4 className="text-lg font-semibold mb-4 text-foreground/80">Professional Background</h4>
+                       <ul className="space-y-3">
+                         {[
+                           "Entrepreneur",
+                           "Former Chairman, CII Himachal Pradesh",
+                           "Former Chairman, IGBC Chandigarh",
+                           "Board Member, Shoolini University"
+                         ].map((role, i) => (
+                           <li key={i} className="flex items-start gap-3">
+                             <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                             <span className="font-medium text-foreground/90">{role}</span>
+                           </li>
+                         ))}
+                       </ul>
                     </div>
-                    <h3 className="text-3xl font-extrabold mb-2 tracking-tight">Shailesh Pathak</h3>
-                    <p className="text-primary font-bold text-sm uppercase tracking-wide">Psychometric Expert & Coach</p>
                   </div>
 
-                  <div className="md:w-2/3">
-                    <h4 className="text-lg font-semibold mb-6 text-foreground/80">Professional Background</h4>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      {[
-                        "Entrepreneur",
-                        "Former Chairman, CII Himachal Pradesh",
-                        "Former Chairman, IGBC Chandigarh",
-                        "Board Member, Shoolini University"
-                      ].map((role, i) => (
-                        <div key={i} className="flex items-start gap-3 p-4 rounded-2xl bg-secondary/40 border border-transparent hover:border-border/50 hover:bg-secondary/80 hover:shadow-sm transition-all duration-300">
-                          <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span className="font-medium text-sm text-foreground/90">{role}</span>
-                        </div>
-                      ))}
+                  <div className="relative aspect-[4/3] rounded-2xl bg-muted/30 border-2 border-dashed border-primary/20 flex flex-col items-center justify-center p-8 text-center order-1 md:order-2 overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 grayscale" />
+                    <div className="relative z-10 flex flex-col items-center">
+                      <div className="h-20 w-20 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center mb-4 shadow-lg">
+                        <Users className="w-8 h-8 text-primary/60" />
+                      </div>
+                      <p className="text-foreground font-bold text-lg mb-2">Coach Profile Image</p>
+                      <p className="text-sm text-muted-foreground font-medium max-w-[200px]">Reserved area for Shailesh Pathak's photo</p>
                     </div>
                   </div>
 
