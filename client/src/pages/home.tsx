@@ -104,6 +104,71 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Problems Section */}
+        <section className="py-32 bg-background relative overflow-hidden">
+          {/* Decorative subtle background shapes */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/30 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3" />
+
+          <div className="container mx-auto px-6 max-w-6xl relative z-10">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-foreground">
+                Does This Sound Like You?
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              {/* Problem 1 */}
+              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-amber-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
+                  <div className="mb-6 h-12 w-12 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xl shadow-sm border border-orange-200">
+                    1
+                  </div>
+                  <h3 className="text-xl font-bold text-orange-500 mb-4 leading-snug">
+                    "We are confused between Science, Commerce, and Humanities."
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                    Marks are creating pressure, relatives are giving opinions, and online advice is overwhelming. You want clarity, but every option feels risky.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Problem 2 */}
+              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group translate-y-0 md:translate-y-8">
+                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-emerald-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
+                  <div className="mb-6 h-12 w-12 rounded-2xl bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl shadow-sm border border-green-200">
+                    2
+                  </div>
+                  <h3 className="text-xl font-bold text-green-600 mb-4 leading-snug">
+                    "I don't want my child to regret this decision later."
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                    You're worried that one wrong choice now could lead to loss of confidence, stress, or academic struggles down the line.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Problem 3 */}
+              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group">
+                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-amber-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
+                  <div className="mb-6 h-12 w-12 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xl shadow-sm border border-orange-200">
+                    3
+                  </div>
+                  <h3 className="text-xl font-bold text-orange-500 mb-4 leading-snug">
+                    "Parents and students are not on the same page."
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                    Conversations turn into arguments. Everyone wants what's best, but reaching an agreement seems impossible without an unbiased expert.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* About Section */}
         <section id="about" className="py-32 bg-secondary/30 relative">
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
