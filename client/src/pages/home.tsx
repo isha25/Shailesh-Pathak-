@@ -71,26 +71,27 @@ export default function Home() {
               {/* Hero Image Placeholder */}
               <div className="relative w-full max-w-sm mx-auto lg:max-w-[400px] lg:ml-auto animate-in fade-in zoom-in-95 duration-1000 delay-300 fill-mode-both">
                 {/* Decorative elements behind the image */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-[2.5rem] transform rotate-3 scale-105 blur-xl -z-10" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-[2.5rem] transform rotate-3 scale-105 blur-2xl -z-10" />
                 <div className="absolute -inset-1 bg-gradient-to-br from-border/50 to-background rounded-[2.5rem] -z-10" />
                 
-                <div className="relative aspect-[3/4] rounded-[2.5rem] bg-secondary/40 backdrop-blur-sm border border-border/50 flex flex-col items-center justify-center p-10 text-center overflow-hidden group shadow-2xl shadow-primary/5">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative aspect-[3/4] rounded-[2.5rem] bg-secondary/60 backdrop-blur-xl border border-white/10 flex flex-col items-center justify-center p-10 text-center overflow-hidden group shadow-[0_20px_50px_rgba(0,0,0,0.3)] shadow-primary/20">
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-full blur-3xl" />
                   
-                  <div className="h-20 w-20 rounded-2xl bg-background shadow-md border border-border/40 flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <Users className="w-8 h-8 text-primary/60" />
+                  <div className="h-20 w-20 rounded-2xl bg-background/50 shadow-lg border border-white/10 flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 backdrop-blur-md">
+                    <Users className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Hero Image Area</h3>
                   <p className="text-muted-foreground font-medium mb-6">Professional headshot will be placed here</p>
                   
-                  <div className="w-full max-w-[240px] h-2 bg-border/40 rounded-full overflow-hidden">
-                    <div className="h-full bg-primary/20 w-1/3 rounded-full animate-pulse" />
+                  <div className="w-full max-w-[240px] h-2 bg-black/40 rounded-full overflow-hidden border border-white/5">
+                    <div className="h-full bg-primary/80 w-1/3 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,165,0,0.5)]" />
                   </div>
                 </div>
 
                 {/* Floating badge */}
-                <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl p-4 shadow-xl border border-border/50 flex items-center gap-4 animate-bounce hover:animate-none delay-500">
-                  <div className="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                <div className="absolute -bottom-6 -left-6 bg-background/80 backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-white/10 flex items-center gap-4 animate-bounce hover:animate-none delay-500">
+                  <div className="h-10 w-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 border border-green-500/30">
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <div>
@@ -172,21 +173,23 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-32 bg-secondary/30 relative">
-          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-          <div className="container mx-auto px-6 max-w-6xl">
+        <section id="about" className="py-32 bg-background relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          
+          <div className="container mx-auto px-6 max-w-6xl relative z-10">
             <div className="flex flex-col items-center text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">About Your Coach - Shailesh Pathak</h2>
-              <p className="text-xl text-primary font-semibold mb-6">Career Clarity & Stream Selection Coach</p>
-              <div className="h-1.5 w-24 bg-primary/20 rounded-full overflow-hidden">
-                <div className="h-full bg-primary w-1/3 rounded-full" />
+              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-foreground">About Your Coach - Shailesh Pathak</h2>
+              <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 font-semibold mb-6">Career Clarity & Stream Selection Coach</p>
+              <div className="h-1.5 w-24 bg-white/5 rounded-full overflow-hidden">
+                <div className="h-full bg-primary/80 w-1/3 rounded-full shadow-[0_0_10px_rgba(255,165,0,0.5)]" />
               </div>
             </div>
 
             <div className="max-w-5xl mx-auto relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              <Card className="relative border-border/40 shadow-2xl bg-background/80 backdrop-blur-xl overflow-hidden rounded-[2.5rem] transition-all duration-500 hover:shadow-primary/5">
-                <CardContent className="p-10 md:p-16 grid md:grid-cols-2 gap-12 items-center">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-rose-500/20 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <Card className="relative border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.1)] bg-background/40 backdrop-blur-2xl overflow-hidden rounded-[2.5rem] transition-all duration-500 hover:shadow-primary/10">
+                <CardContent className="p-10 md:p-16 grid md:grid-cols-2 gap-12 items-center relative z-10">
                   
                   <div className="flex flex-col text-left space-y-6 order-2 md:order-1">
                     <p className="text-lg text-muted-foreground leading-relaxed">
@@ -232,22 +235,25 @@ export default function Home() {
         </section>
 
         {/* How I Help Section */}
-        <section id="how-i-help" className="py-32 relative">
-          <div className="container mx-auto px-6 max-w-6xl">
+        <section id="how-i-help" className="py-32 relative overflow-hidden bg-background">
+          {/* Subtle background glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+          
+          <div className="container mx-auto px-6 max-w-6xl relative z-10">
             <div className="grid lg:grid-cols-[1fr,1.2fr] gap-20 items-center">
               
               <div className="order-2 lg:order-1">
-                <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">The Process</span>
-                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">How I Help?</h2>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 font-bold tracking-wider uppercase text-sm mb-4 block">The Process</span>
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 text-foreground">How I Help?</h2>
                 <div className="space-y-6 text-lg text-muted-foreground/90 font-medium">
                   <p className="leading-relaxed">
-                    I help Class 9 & 10 students choose the right Class 11 stream using <strong className="text-foreground font-bold border-b-2 border-primary/20 pb-0.5">scientific psychological assessments</strong>, <strong className="text-foreground font-bold border-b-2 border-primary/20 pb-0.5">strength-based mapping</strong>, and <strong className="text-foreground font-bold border-b-2 border-primary/20 pb-0.5">personalised guidance</strong>.
+                    I help Class 9 & 10 students choose the right Class 11 stream using <strong className="text-foreground font-bold border-b-2 border-primary/40 pb-0.5">scientific psychological assessments</strong>, <strong className="text-foreground font-bold border-b-2 border-primary/40 pb-0.5">strength-based mapping</strong>, and <strong className="text-foreground font-bold border-b-2 border-primary/40 pb-0.5">personalised guidance</strong>.
                   </p>
                   <p className="leading-relaxed">
                     I created the <strong className="text-foreground font-bold">Right Stream Decision Blueprint</strong> so families never have to rely on guesswork, pressure, or random opinions again.
                   </p>
                   <p className="leading-relaxed">
-                    My approach is practical, structured, and designed to bring <strong className="text-foreground font-bold">clarity, peace, and confidence</strong> to both parents and students.
+                    My approach is practical, structured, and designed to bring <strong className="text-foreground font-bold text-primary">clarity, peace, and confidence</strong> to both parents and students.
                   </p>
                 </div>
               </div>
@@ -258,26 +264,29 @@ export default function Home() {
                     num: "1",
                     title: "Scientific Psychological Assessments",
                     desc: "Data-driven insights to uncover natural aptitudes and true potential.",
-                    icon: <BrainCircuit className="w-6 h-6 text-primary" />
+                    icon: <BrainCircuit className="w-6 h-6 text-primary" />,
+                    gradient: "from-violet-500/10 to-fuchsia-500/10"
                   },
                   {
                     num: "2",
                     title: "Strength-Based Mapping",
                     desc: "Aligning personal strengths with the right academic and career paths.",
-                    icon: <BookOpen className="w-6 h-6 text-primary" />
+                    icon: <BookOpen className="w-6 h-6 text-primary" />,
+                    gradient: "from-blue-500/10 to-cyan-500/10"
                   },
                   {
                     num: "3",
                     title: "Personalised Guidance",
                     desc: "One-on-one support tailored to your unique family situation and goals.",
-                    icon: <Users className="w-6 h-6 text-primary" />
+                    icon: <Users className="w-6 h-6 text-primary" />,
+                    gradient: "from-rose-500/10 to-orange-500/10"
                   }
                 ].map((item, i) => (
-                  <Card key={i} className={`shadow-sm hover:shadow-xl transition-all duration-500 border-border/40 bg-background/50 backdrop-blur-sm group overflow-hidden ${i === 1 ? 'lg:translate-x-8' : ''}`}>
+                  <Card key={i} className={`shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border-white/10 bg-background/40 backdrop-blur-xl group overflow-hidden rounded-3xl ${i === 1 ? 'lg:translate-x-8' : ''}`}>
                     <CardContent className="p-6 md:p-8 flex gap-6 items-start relative z-10">
-                      <div className="absolute right-0 top-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-700" />
+                      <div className={`absolute right-0 top-0 w-32 h-32 bg-gradient-to-bl ${item.gradient} rounded-bl-[100px] -z-10 transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-700`} />
                       
-                      <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 border border-primary/10 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      <div className="h-14 w-14 rounded-2xl bg-white/5 backdrop-blur-md flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-primary/20 transition-colors duration-300 shadow-inner">
                         {item.icon}
                       </div>
                       <div>
@@ -293,29 +302,31 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-32 bg-secondary/20 relative">
-          <div className="container mx-auto px-6 max-w-6xl">
+        <section className="py-32 bg-secondary/30 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          <div className="container mx-auto px-6 max-w-6xl relative z-10">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
-                What Client Say <span className="border-b-4 border-primary">About Us</span>
+                What Client Say <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">About Us</span>
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {/* Testimonial 1 */}
-              <Card className="bg-background/80 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl transition-all duration-500 rounded-3xl overflow-hidden group">
+              <Card className="bg-background/40 backdrop-blur-2xl border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 rounded-3xl overflow-hidden group">
                 <CardContent className="p-8 lg:p-10 flex flex-col h-full relative">
-                  <div className="flex gap-1 mb-6">
+                   <div className="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors duration-500" />
+                  <div className="flex gap-1 mb-6 relative z-10">
                     {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-6 h-6 text-amber-400 fill-amber-400" viewBox="0 0 20 20">
+                      <svg key={i} className="w-6 h-6 text-amber-400 fill-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
                   </div>
-                  <p className="text-muted-foreground/90 leading-relaxed text-lg font-medium mb-8 italic">
+                  <p className="text-muted-foreground/90 leading-relaxed text-lg font-medium mb-8 italic relative z-10">
                     "Before this call, we were completely stuck. My son was good in studies, but unsure about Science. I was scared of closing doors for him. After the call, everything became clear. We finally understood his strengths and took a decision with confidence - without pressure."
                   </p>
-                  <div className="mt-auto pt-6 border-t border-border/50">
+                  <div className="mt-auto pt-6 border-t border-white/10 relative z-10">
                     <p className="font-bold text-foreground text-lg">Anita Sharma</p>
                     <p className="text-primary font-medium text-sm">Parent of Class 10 Student</p>
                   </div>
@@ -323,19 +334,20 @@ export default function Home() {
               </Card>
 
               {/* Testimonial 2 */}
-              <Card className="bg-background/80 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl transition-all duration-500 rounded-3xl overflow-hidden group">
+              <Card className="bg-background/40 backdrop-blur-2xl border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 rounded-3xl overflow-hidden group">
                 <CardContent className="p-8 lg:p-10 flex flex-col h-full relative">
-                  <div className="flex gap-1 mb-6">
+                   <div className="absolute -right-20 -top-20 w-40 h-40 bg-orange-400/10 rounded-full blur-3xl group-hover:bg-orange-400/20 transition-colors duration-500" />
+                  <div className="flex gap-1 mb-6 relative z-10">
                     {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-6 h-6 text-amber-400 fill-amber-400" viewBox="0 0 20 20">
+                      <svg key={i} className="w-6 h-6 text-amber-400 fill-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
                   </div>
-                  <p className="text-muted-foreground/90 leading-relaxed text-lg font-medium mb-8 italic">
+                  <p className="text-muted-foreground/90 leading-relaxed text-lg font-medium mb-8 italic relative z-10">
                     "Our son never argued, but he had completely withdrawn from the discussion. Whenever we mentioned stream selection, he would say 'anything is fine.' During the session, Mr. Shailesh Asked questions that helped him open up. For the first time, we heard what he actually wanted. The atmosphere at home changed immediately. the decision was not forced. It became a shared choice."
                   </p>
-                  <div className="mt-auto pt-6 border-t border-border/50 flex items-center justify-between">
+                  <div className="mt-auto pt-6 border-t border-white/10 flex items-center justify-between relative z-10">
                     <div>
                       <p className="font-bold text-foreground text-lg">Happy Parent</p>
                       <p className="text-primary font-medium text-sm">Class 10 Student</p>
