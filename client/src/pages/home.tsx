@@ -70,25 +70,19 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Hero Image Placeholder */}
+              {/* Hero Image */}
               <div className="relative w-full max-w-[280px] sm:max-w-sm mx-auto lg:max-w-[400px] lg:ml-auto animate-in fade-in zoom-in-95 duration-1000 delay-300 fill-mode-both mt-4 lg:mt-0">
                 {/* Decorative elements behind the image */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-[2rem] md:rounded-[2.5rem] transform rotate-3 scale-105 blur-xl md:blur-2xl -z-10" />
                 <div className="absolute -inset-1 bg-gradient-to-br from-border/50 to-background rounded-[2rem] md:rounded-[2.5rem] -z-10" />
                 
-                <div className="relative aspect-[3/4] rounded-[2rem] md:rounded-[2.5rem] bg-secondary/60 backdrop-blur-xl border border-white/10 flex flex-col items-center justify-center p-6 md:p-10 text-center overflow-hidden group shadow-[0_20px_50px_rgba(0,0,0,0.3)] shadow-primary/20">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-full blur-2xl md:blur-3xl" />
-                  
-                  <div className="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-background/50 shadow-lg border border-white/10 flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 backdrop-blur-md">
-                    <Users className="w-6 h-6 md:w-8 md:h-8 text-primary" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Hero Image Area</h3>
-                  <p className="text-xs md:text-sm text-muted-foreground font-medium mb-4 md:mb-6">Professional headshot will be placed here</p>
-                  
-                  <div className="w-full max-w-[180px] md:max-w-[240px] h-1.5 md:h-2 bg-black/40 rounded-full overflow-hidden border border-white/5">
-                    <div className="h-full bg-primary/80 w-1/3 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,165,0,0.5)]" />
-                  </div>
+                <div className="relative aspect-[3/4] rounded-[2rem] md:rounded-[2.5rem] bg-secondary/60 backdrop-blur-xl border border-white/10 flex flex-col items-center justify-center text-center overflow-hidden group shadow-[0_20px_50px_rgba(0,0,0,0.3)] shadow-primary/20">
+                  <img 
+                    src="/images/coach-placeholder.png" 
+                    alt="Shailesh Pathak" 
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
                 </div>
 
                 {/* Floating badge */}
@@ -220,15 +214,13 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="relative w-full max-w-[280px] sm:max-w-none mx-auto aspect-[4/3] rounded-[1.5rem] md:rounded-2xl bg-muted/30 border-2 border-dashed border-primary/20 flex flex-col items-center justify-center p-6 md:p-8 text-center order-1 md:order-2 overflow-hidden">
-                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 grayscale" />
-                    <div className="relative z-10 flex flex-col items-center">
-                      <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center mb-3 md:mb-4 shadow-lg">
-                        <Users className="w-6 h-6 md:w-8 md:h-8 text-primary/60" />
-                      </div>
-                      <p className="text-foreground font-bold text-base md:text-lg mb-1 md:mb-2">Coach Profile Image</p>
-                      <p className="text-xs md:text-sm text-muted-foreground font-medium max-w-[180px] md:max-w-[200px]">Reserved area for Shailesh Pathak's photo</p>
-                    </div>
+                  <div className="relative w-full max-w-[280px] sm:max-w-none mx-auto aspect-[4/3] rounded-[1.5rem] md:rounded-2xl border-2 border-transparent flex flex-col items-center justify-center text-center order-1 md:order-2 overflow-hidden shadow-xl shadow-primary/10">
+                    <img 
+                      src="/images/coach-placeholder-horizontal.png" 
+                      alt="Shailesh Pathak" 
+                      className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent opacity-60" />
                   </div>
 
                 </CardContent>
