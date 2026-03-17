@@ -118,48 +118,51 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-8 relative">
               {/* Problem 1 */}
-              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-amber-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
-                  <div className="mb-6 h-12 w-12 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xl shadow-sm border border-orange-200">
+              <Card className="bg-background/40 backdrop-blur-2xl border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group rounded-3xl">
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-violet-400 to-fuchsia-400 opacity-80" />
+                <div className="absolute -right-10 -top-10 w-32 h-32 bg-violet-400/10 rounded-full blur-2xl group-hover:bg-violet-400/20 transition-colors duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full relative z-10">
+                  <div className="mb-6 h-14 w-14 rounded-2xl bg-violet-100/50 flex items-center justify-center text-violet-600 font-extrabold text-2xl shadow-sm border border-violet-200/50 backdrop-blur-sm">
                     1
                   </div>
-                  <h3 className="text-xl font-bold text-orange-500 mb-4 leading-snug">
-                    "We are confused between Science, Commerce, and Humanities."
+                  <h3 className="text-xl font-bold text-foreground mb-4 leading-snug">
+                    "We are confused between <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500">Science, Commerce, and Humanities.</span>"
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                  <p className="text-muted-foreground leading-relaxed mt-auto font-medium">
                     Marks are creating pressure, relatives are giving opinions, and online advice is overwhelming. You want clarity, but every option feels risky.
                   </p>
                 </CardContent>
               </Card>
 
               {/* Problem 2 */}
-              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group translate-y-0 md:translate-y-8">
-                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-emerald-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
-                  <div className="mb-6 h-12 w-12 rounded-2xl bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl shadow-sm border border-green-200">
+              <Card className="bg-background/40 backdrop-blur-2xl border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group rounded-3xl translate-y-0 md:translate-y-8">
+                 <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-400 to-cyan-400 opacity-80" />
+                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl group-hover:bg-blue-400/20 transition-colors duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full relative z-10">
+                  <div className="mb-6 h-14 w-14 rounded-2xl bg-blue-100/50 flex items-center justify-center text-blue-600 font-extrabold text-2xl shadow-sm border border-blue-200/50 backdrop-blur-sm">
                     2
                   </div>
-                  <h3 className="text-xl font-bold text-green-600 mb-4 leading-snug">
-                    "I don't want my child to regret this decision later."
+                  <h3 className="text-xl font-bold text-foreground mb-4 leading-snug">
+                    "I don't want my child to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">regret this decision</span> later."
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                  <p className="text-muted-foreground leading-relaxed mt-auto font-medium">
                     You're worried that one wrong choice now could lead to loss of confidence, stress, or academic struggles down the line.
                   </p>
                 </CardContent>
               </Card>
 
               {/* Problem 3 */}
-              <Card className="bg-background/60 backdrop-blur-xl border-border/40 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group">
-                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-amber-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                <CardContent className="p-8 lg:p-10 flex flex-col h-full">
-                  <div className="mb-6 h-12 w-12 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-xl shadow-sm border border-orange-200">
+              <Card className="bg-background/40 backdrop-blur-2xl border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group rounded-3xl">
+                 <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-rose-400 to-orange-400 opacity-80" />
+                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-rose-400/10 rounded-full blur-2xl group-hover:bg-rose-400/20 transition-colors duration-500" />
+                <CardContent className="p-8 lg:p-10 flex flex-col h-full relative z-10">
+                  <div className="mb-6 h-14 w-14 rounded-2xl bg-rose-100/50 flex items-center justify-center text-rose-600 font-extrabold text-2xl shadow-sm border border-rose-200/50 backdrop-blur-sm">
                     3
                   </div>
-                  <h3 className="text-xl font-bold text-orange-500 mb-4 leading-snug">
-                    "Parents and students are not on the same page."
+                  <h3 className="text-xl font-bold text-foreground mb-4 leading-snug">
+                    "Parents and students are <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500">not on the same page.</span>"
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mt-auto">
+                  <p className="text-muted-foreground leading-relaxed mt-auto font-medium">
                     Conversations turn into arguments. Everyone wants what's best, but reaching an agreement seems impossible without an unbiased expert.
                   </p>
                 </CardContent>
